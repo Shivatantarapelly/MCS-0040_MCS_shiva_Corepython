@@ -58,6 +58,169 @@ else:
 print('-----thank you-----')
 '''
 
+'''
+mobiles = {'samsung': 10000,'oppo':15000,'vivo':20000,'iphone':50000}
+tv = {'samsung': 40000,'lg': 50000,'mi': 20000,'sony': 45000}
+laptops = {'lenovo': 40000,'hp': 50000,'acer':30000}
+print('enter 1:mobiles 2:Tv 3:Laptops')
+u1 = int(input('enter your choice:'))
+if u1 == 1:
+    print('available mobiles:',mobiles.keys())
+    u1 = input('enter your mobile choice:')
+    if u1 == 'samsung':
+        print('price of samsung mobile is',mobiles['samsung'])
+    elif u1 == 'oppo':
+        print('price of oppo mobile is', mobiles['oppo'])
+    elif u1 == 'vivo':
+        print('price of vivo mobile is', mobiles['vivo'])
+    elif u1 == 'iphone':
+        print('price of oppo mobile is', mobiles['iphone'])
+    else:
+        print('mobile is not available')
+elif u1 == 2:
+    print('available mobiles:',tv.keys())
+    u1 = input('enter your TV choice:')
+    if u1 == 'samsung':
+        print('price of samsung TV is',tv['samsung'])
+    elif u1 == 'lg':
+        print('price of lg tv is', tv['lg'])
+    elif u1 == 'mi':
+        print('price of mi tv is', tv['mi'])
+    elif u1 == 'sony':
+        print('price of sony tv is', tv['sony'])
+    else:
+        print('Tv is not available')
+elif u1 == 3:
+    print('available laptops:',laptops.keys())
+    u1 = input('enter your laptop choice:')
+    if u1 == 'lenovo':
+        print('price of lenovo laptop is',laptops['lenovo'])
+    elif u1 == 'hp':
+        print('price of hp laptop is', laptops['hp'])
+    elif u1 == 'acer':
+        print('price of acer laptop is', laptops['acer'])
+    else:
+        print('mobile is not available')
+else:
+    print('enter valid option')
+
+'''
+'''
+print('enter the car of your choice to know the price from below')
+print('1:maruti 2:toyota 3:mahindra')
+user = int(input('enter your choice:'))
+if user == 1:
+    print('1:swift 2:baleno 3:dezire')
+    user = int(input('enter your choice:'))
+    if user == 1:
+        print('---you have selceted swift---')
+        print('1: automatic 2: manual')
+        user = int(input('enter your choice:'))
+        if user == 1:
+            print('the price of swift automatic is Rs:1000000/-')
+        elif user == 2:
+            print('print price of swift manual is Rs:8000000')
+        else:
+            print('enter valid option')
+    elif user == 2:
+        print('---you have selceted Baleno---')
+        print('1: automatic 2: manual')
+        user = int(input('enter your choice:'))
+        if user == 1:
+            print('the price of Baleno automatic is Rs:1400000/-')
+        elif user == 2:
+            print('print price of Baleno manual is Rs:1200000')
+        else:
+            print('enter valid option')
+    elif user == 3:
+        print('---you have selceted Dezire---')
+        print('1: automatic 2: manual')
+        user = int(input('enter your choice:'))
+        if user == 1:
+            print('the price of Dezire automatic is Rs:1200000/-')
+        elif user == 2:
+            print('print price of Dezire manual is Rs:1000000')
+        else:
+            print('enter valid option')
+    else:
+        print('enter valid option')
+elif user == 2:
+    print('1:fortuner 2:etios')
+    user = int(input('enter your choice:'))
+    if user == 1:
+        print('---you have selceted Fortuner---')
+        print('1: automatic 2: manual')
+        user = int(input('enter your choice:'))
+        if user == 1:
+            print('the price of fortuner automatic is Rs:3000000/-')
+        elif user == 2:
+            print('print price of fortuner manual is Rs:1000000')
+        else:
+            print('enter valid option')
+    elif user == 2:
+        print('---you have selceted Etios---')
+        print('1: automatic 2: manual')
+        user = int(input('enter your choice:'))
+        if user == 1:
+            print('the price of Etios automatic is Rs:1300000/-')
+        elif user == 2:
+            print('print price of Etios manual is Rs:11000000')
+        else:
+            print('enter valid option')
+elif user == 3:
+    print('1:xuv500 2:tuv300')
+    user = int(input('enter your choice:'))
+    if user == 1:
+        print('---you have selceted XUV 500---')
+        print('1: automatic 2: manual')
+        user = int(input('enter your choice:'))
+        if user == 1:
+            print('the price of XUV500 automatic is Rs:2500000/-')
+        elif user == 2:
+            print('print price of XUV500 manual is Rs:2000000')
+        else:
+            print('enter valid option')
+    elif user == 2:
+        print('---you have selceted TUV300---')
+        print('1: automatic 2: manual')
+        user = int(input('enter your choice:'))
+        if user == 1:
+            print('the price of TUV300 automatic is Rs:1800000/-')
+        elif user == 2:
+            print('print price of TUV300 manual is Rs:1500000')
+        else:
+            print('enter valid option')
+else:
+    print('enter valid option')
+'''
+
+'''
+age = int(input('enter your age:'))
+if age>=18:
+    print('----you are eligible to apply for driving licence----')
+    print('----do you have adhaar card----')
+    print('press 1: for yes and 0 : for no')
+    a = int(input('please enter:'))
+    print('---do you have pan card---')
+    print('press 1: for yes and 0 : for no')
+    p = int(input('please enter:'))
+    if a == 1 and p == 1:
+        print('you would be charging Rs:1000/- for applying')
+        print('press 1: for yes and 0 : for no')
+        print('---Please Confirm---')
+        c = int(input('please enter here:'))
+        if c == 1:
+            print('you have successfully applied')
+            print('------happy driving-----')
+        else:
+            print('transaction failed')
+    else:
+        print('sorry we need both adhar and pan for applying')
+else:
+    print('you are not eligible for applying for driving licence')
+
+'''
+
 
 
 
