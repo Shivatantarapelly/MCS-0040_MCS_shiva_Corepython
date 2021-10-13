@@ -1,0 +1,39 @@
+>>> x = 10
+>>> y = 10
+>>> z = 10
+>>> id(x),id(y),id(z)
+(1515416880, 1515416880, 1515416880)
+>>> z = 20
+>>> id(z)
+1515417200
+>>>
+>>> x = 10
+>>> id(x),
+(1515416880,)
+>>>
+>>> id(x),x
+(1515416880, 10)
+>>> x = 20
+>>> id(x),x
+(1515417200, 20)
+
+>>> # Data types Numbers(int float) boolean (True False) String
+... x = 10
+>>> x = 10 # integer
+>>> print(x), type(x), id(x)
+10
+(None, <class 'int'>, 1515416880)
+>>> mbill = 134.45 # float
+>>> mbill,print(mbill), type(mbill), id(mbill)
+134.45
+(134.45, None, <class 'float'>, 2535103992144)
+>>> is_perm = True # boolean
+>>> is_perm,print(is_perm),type(is_perm), id(is_perm)
+True
+(True, None, <class 'bool'>, 1514926304)
+>>>>>> name = 'Madhu Nettem'
+>>> name,print(name),type(name),id(name)
+Madhu Nettem
+('Madhu Nettem', None, <class 'str'>, 2535122038384)
+>>>
+
