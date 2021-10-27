@@ -1,20 +1,26 @@
 '''
 writing n number of if condition inside another if are said to be nested if
 '''
-
-'''year = int(input('enter year:'))
-if year%4 == 0:
-    if year%100 == 0:
-        if year%400 == 0:
-            print(year.'is a leap year')
+# taking year as user input and giving o/p as leap year or not a leap year
+'''
+year = int(input('enter year:'))
+if year > 0 and year <= 2021:
+    if year%4 == 0:
+        if year%100 == 0:
+            if year%400 == 0:
+                print(year,'is a leap year')
+            else:
+                print(year,'is not a leap year')
         else:
-            print(year,'is not a leap year')
+            print(year,'is a leap year')
     else:
-        print(year,'is a leap year')
+        print(year,'is not a leap year')
 else:
-    print(year,'is not a leap year')
+    print('enter valid year')
+'''
 
-
+'''
+#validating the hall ticket number present in data base and display pass or fail and future planning
 dic = {123:'pass',456:'fail',789:'pass',101112:'fail'}
 num = int(input('enter you examination number:'))
 if num in dic:
@@ -57,7 +63,7 @@ else:
 
 print('-----thank you-----')
 '''
-
+#taking the user inputs and displaying accordingly the brands and and finally their respective prices
 '''
 mobiles = {'samsung': 10000,'oppo':15000,'vivo':20000,'iphone':50000}
 tv = {'samsung': 40000,'lg': 50000,'mi': 20000,'sony': 45000}
@@ -103,8 +109,10 @@ elif u1 == 3:
         print('mobile is not available')
 else:
     print('enter valid option')
-
 '''
+
+# taking the user input and validating whether it matches with data base, displaying accordingly and finally showing
+#price of respective cars
 '''
 print('enter the car of your choice to know the price from below')
 print('1:maruti 2:toyota 3:mahindra')
@@ -194,31 +202,34 @@ else:
     print('enter valid option')
 '''
 
+#taking tha age as the user input and displaying whether he is eligible for applying for the driving license or not
 '''
 age = int(input('enter your age:'))
-if age>=18:
-    print('----you are eligible to apply for driving licence----')
-    print('----do you have adhaar card----')
-    print('press 1: for yes and 0 : for no')
-    a = int(input('please enter:'))
-    print('---do you have pan card---')
-    print('press 1: for yes and 0 : for no')
-    p = int(input('please enter:'))
-    if a == 1 and p == 1:
-        print('you would be charging Rs:1000/- for applying')
+if age>0 and age<100:
+    if age>=18:
+        print('----you are eligible to apply for driving licence----')
+        print('----do you have adhaar card----')
         print('press 1: for yes and 0 : for no')
-        print('---Please Confirm---')
-        c = int(input('please enter here:'))
-        if c == 1:
-            print('you have successfully applied')
-            print('------happy driving-----')
+        a = int(input('please enter:'))
+        print('---do you have pan card---')
+        print('press 1: for yes and 0 : for no')
+        p = int(input('please enter:'))
+        if a == 1 and p == 1:
+            print('you would be charging Rs:1000/- for applying')
+            print('press 1: for yes and 0 : for no')
+            print('---Please Confirm---')
+            c = int(input('please enter here:'))
+            if c == 1:
+                print('you have successfully applied')
+                print('------happy driving-----')
+            else:
+                print('transaction failed')
         else:
-            print('transaction failed')
+            print('sorry we need both adhar and pan for applying')
     else:
-        print('sorry we need both adhar and pan for applying')
+        print('you are not eligible for applying for driving licence')
 else:
-    print('you are not eligible for applying for driving licence')
-
+    print('enter valid age')
 '''
 
 

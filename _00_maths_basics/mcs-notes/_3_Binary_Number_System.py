@@ -20,7 +20,7 @@ Given binary  number                :  1  0  0  0  1  0  0  1
                                        -----------------------
 position(0-7) left to right :          7  6  5  4  3  2  1  0 
                                       2  2  2  2  2  2  2  2  
-Whereever 1 exists,calcuate power : ----------------------------   
+Wherever 1 exists,calculate power : ----------------------------   
                                     128  0  0  0  8  0  0  1  ==> sum => 137
                                    -----------------------------            
                                                            
