@@ -151,7 +151,7 @@ course('python')
 5. keyword Arbitrary argument
 """
 
-'''
+
 # 1. Positional argument
 
 def addition(a, b, c):
@@ -184,8 +184,7 @@ def colour(r, b, w):
     print('w is : ', w)
 
 
-colour('red', b='blue', w='white') # in this red is pos argument , where b and w are keyword argument
-'''
+colour('red', b='blue', w='white')  # in this red is pos argument , where b and w are keyword argument
 
 # deep copy, shallow copy
 
@@ -212,4 +211,4 @@ import copy
 lis1 = [[1, 2, 3], [10, 20, 30]]
 lis2 = copy.deepcopy(lis1)
 lis2[0][0] = 100
-print('in this case the list will not change:', lis1, lis2)  # using deep copy we cannot the copied list can only change
+print('in this case the list will not change:', lis1, lis2)  # using deepcopy we cannot the copied list can only change

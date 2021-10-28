@@ -99,7 +99,7 @@ def sec_big_num(l):
 print(sec_big_num(lis))
 '''
 
-'''
+
 def biggest(a, b, c):
     if a > b and a > c:
         return a
@@ -109,5 +109,4 @@ def biggest(a, b, c):
         return c
 
 
-print('biggest number is :', biggest(10, 20, 30))
-'''
+print('biggest number is :', biggest(10,20,30))
