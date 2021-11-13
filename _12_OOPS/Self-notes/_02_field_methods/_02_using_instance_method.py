@@ -25,15 +25,16 @@ class Travels:
         print(f'Boarding Time: {st} dropping Time: {et}')
 
     @classmethod
-    def st_end(cls):   # only allowing class variables
+    def st_end(cls):  # only allowing class variables
         print(f'From: {Travels.start_pt} To: {Travels.end_pt}')
 
-
     @staticmethod
-    def sta():   # only allowing class variables to access
+    def sta():  # only allowing class variables to access
         print(f'{Travels.start_pt} {Travels.end_pt}')
+
 
 T = Travels('SRS', 'ORANGE', 'MORNINGSTAR', 'VRL')
 Travels.st_end()
 T.t1_details('21:00', '22:00')
 Travels.sta()
+print(T.t1)  # accessing instance variables
