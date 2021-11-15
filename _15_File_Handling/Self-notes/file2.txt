@@ -1,0 +1,15 @@
+
+We can also split lines using file handling in Python. This splits the variable when space is encountered.
+You can also split using any characters as we wish. Here is the code:
+
+# Python code to illustrate split() function
+with open("file.text", "r") as file:
+    data = file.readlines()
+    for line in data:
+        word = line.split()
+        print (word)
+
+hi shiva 
+i am the new data added in this file2
+by using a+ mode you can add data and read the data in the file
+thank you

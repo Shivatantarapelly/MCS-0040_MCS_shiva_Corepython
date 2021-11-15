@@ -1,0 +1,10 @@
+hi shiva 
+how are you 
+welcome to 1t file, you can see how we can write the file
+hi shiva                           
+good morning
+i have been appended in this case
+
+i am the new data adding at the end of existing data in a file
+i hope it is clear
+thank you
