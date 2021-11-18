@@ -1,15 +1,13 @@
-
-We can also split lines using file handling in Python. This splits the variable when space is encountered.
-You can also split using any characters as we wish. Here is the code:
-
-# Python code to illustrate split() function
-with open("file.text", "r") as file:
-    data = file.readlines()
-    for line in data:
-        word = line.split()
-        print (word)
-
-hi shiva 
-i am the new data added in this file2
-by using a+ mode you can add data and read the data in the file
-thank you
+matches for John 
+Result 1 : ['Doe, John, New York, (917) 958-1191'] 
+Result 2 : ['Doe, John, California, (212) 234-1191'] 
+Result 3 : ['John, Smith, 9179581191, New York'] 
+Result 4 : ['Doe, John, Florida, (919) 234-1192'] 
+matches for Smith 
+Result 1 : ['John, Smith, 9179581191, New York'] 
+matches for GATES 
+Result 1 : ['Bill, Gates, (917) 358-1291, New York'] 
+matches for Abc 
+No Result Found 
+matches for MADHU 
+No Result Found 
