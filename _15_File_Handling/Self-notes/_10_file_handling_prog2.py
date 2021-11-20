@@ -1,4 +1,3 @@
-
 # write a program and fetch the data using http get and point out number of holidays in england
 # and wales then group them based on year
 
@@ -28,6 +27,7 @@ for i in ndata2:
     for ke,va in dic1.items():
         if ke == 'title' or ke == 'value':
 """
+
 count = 0
 lis1 = []
 dic = {}
@@ -44,22 +44,21 @@ for i in range(len(lis1)):
         if lis1[i] != "Christmas Day":
             pass
         else:
-            dic[year] = lis1[st:i+2]
+            dic[year] = lis1[st:i + 2]
             year += 1
-            st = i+2
+            st = i + 2
     else:
         if lis1[i] != "Boxing Day":
             pass
         else:
-            dic[year] = lis1[st:i+2]
+            dic[year] = lis1[st:i + 2]
             year += 1
-            st = i+2
+            st = i + 2
 
 print(dic)
-print('Total number of holidays',count)
-for key,value in dic.items():
-    print(f'the holiday in {key} is : {len(value)//2}')
-
+print('Total number of holidays', count)
+for key, value in dic.items():
+    print(f'the holiday in {key} is : {len(value) // 2}')
 
 # print(lis1)
 # lis2 = []
@@ -70,4 +69,3 @@ for key,value in dic.items():
 # for i in lis2:
 #     print(f'the holiday year {i} is {lis1.count(str(i))}')
 #
-
