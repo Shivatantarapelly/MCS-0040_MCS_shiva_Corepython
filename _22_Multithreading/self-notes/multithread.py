@@ -89,11 +89,28 @@ print(f'processed in {end_time - start_time} seconds')  # time taken is 10sec
 # using threading to get the time taken to execute the two functions
 
 def run():
-    time.sleep(1)
-    print('iam running')
+    for i in range(5):
+        time.sleep(1)
+        print('iam running')
 
 
 def walk():
-    time.sleep(1)
-    print('iam walking')
+    for j in range(5):
+        time.sleep(1)
+        print('iam walking')
 
+
+r = Thread(target=run)
+w = Thread(target=walk)
+
+start = time.perf_counter()
+r.start()
+time.sleep(0.1)
+w.start()
+
+r.join()
+w.join()
+
+end = time.perf_counter()
+
+print(f'the processed time {end - start} seconds')
